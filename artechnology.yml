@@ -1,0 +1,18 @@
+template-id: artechnology
+name: AR Technology Dashboard
+description: Open, Public IoT Platform based in Oman and MENA region.
+logo-url: https://artech.om/wp-content/uploads/2020/09/Art_logo_horz.png
+info-url: https://artech.om/
+documentation-url: https://docs.artech.om/integrations/the-things-network/
+fields:  
+  - id: token
+    name: Control Device Token
+    description: Token of your Control Device in your AR Tech Dashboard
+    secret: true
+format: json
+headers:
+  Content-Type: application/json  
+create-downlink-api-key: true
+base-url: https://artech.om/api/v1/{token}/telemetry
+paths:
+  uplink-message: /
